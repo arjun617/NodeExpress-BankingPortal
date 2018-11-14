@@ -6,7 +6,7 @@ const {
   accounts,
   users,
   writeJSON
-} = require('data')
+} = require('./data')
 
 const app = express()
 
