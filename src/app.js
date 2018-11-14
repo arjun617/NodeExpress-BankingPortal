@@ -16,7 +16,9 @@ const userData = fs.readFileSync(path.join(__dirname, 'json', 'users.json'), 'ut
 const users = JSON.parse(userData)
 
 app.get('/', (req, res) => res.render('index', {
-  title: 'Index'
+  title: 'Account Summary'
+}, {
+  accounts: accounts
 }))
 
 app.listen(3000, () => {
