@@ -1,9 +1,10 @@
 <%- include('header') %>
+<%- include('transactions',{account: account})
 <div class="container">
   <h1>
     <%= title %>
-  </h1>
-  <a href="/profile">Profile</a>
+</h1>
+<a href="/profile">Profile</a>
 </div>
 
 <%- include('summary',{account:accounts.savings}) %>
