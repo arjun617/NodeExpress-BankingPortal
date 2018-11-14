@@ -16,10 +16,9 @@ const userData = fs.readFileSync(path.join(__dirname, 'json', 'users.json'), 'ut
 const users = JSON.parse(userData)
 
 app.get('/', (req, res) => res.render('index', {
-  title: 'Account Summary'
-}, {
+  title: 'Account Summary',
   accounts: accounts
-}))
+}, ))
 
 app.listen(3000, () => {
   console.log('PS Project Running on port 3000!')
