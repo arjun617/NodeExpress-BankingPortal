@@ -3,7 +3,7 @@ const path = require('path')
 const express = require('express')
 
 const accountRoutes = require('./routes/accounts.js')
-const serviceRoutes = require('./routes/services.js')
+const servicesRoutes = require('./routes/services.js')
 
 const {
   accounts,
@@ -23,7 +23,7 @@ app.use(express.urlencoded({
 }))
 
 app.use('/account', accountRoutes)
-app.use('/services', serviceRoutes)
+app.use('/services', servicesRoutes)
 
 
 
